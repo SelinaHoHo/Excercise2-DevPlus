@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "480px",
+                    md: "768px",
+                    lg: "1024px",
+                },
+                fontFamily: {
+                    sans: ["Poppins", "sans-serif"],
+                    serif: ["Merriweather", "serif"],
+                },
+                extend: {
+                    spacing: {
+                        128: "32rem",
+                        144: "36rem",
+                    },
+                    borderRadius: {
+                        "4xl": "2rem",
+                    },
+                },
+            }
+        }
+    </script>
+    <title>Excersice 2</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="bg-[#fffaef] px-4 py-2 md:py-4 lg:py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div>
+                    <img src="./Images/BB.png" alt="Logo">
+                </div>
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex md:gap-6 lg:gap-8 lg:space-x-4 ">
+                    <a href="#"
+                        class="text-[#7557FF] font-sans text-lg font-normal leading-8 hover:text-[#605D6C]">Home</a>
+                    <a href="#"
+                        class="text-[#605D6C] font-sans text-lg font-normal leading-8 hover:text-[#7557FF]">About</a>
+                    <a href="#"
+                        class="text-[#605D6C] font-sans text-lg font-normal leading-8 hover:text-[#7557FF]">Contact</a>
+                    <a href="#"
+                        class="text-[#605D6C] font-sans text-lg font-normal leading-8 hover:text-[#7557FF]">Pricing</a>
+                </nav>
+                <div class="flex justify-between">
+                    <a href="#"
+                        class="leading-5 text-xs px-2 py-3 text-[#121116] font-semibold md:text-base font-sans md:leading-7 md:px-4 md:py-2">Sign
+                        In</a>
+                    <button
+                        class="leading-5 text-xs px-2 py-1 bg-[#7557ff] text-[#ffffff] font-sans font-semibold md:leading-7 md:text-base md:px-4 md:py-2 rounded">Sign
+                        Up</button>
+                    <div class="px-2 py-2 md:hidden">
+                        <a class="text-[#7557FF]" href="#!"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Introduction -->
+        <div class="bg-[#fffaef] py-10 px-4 md:py-14 lg:py-20">
+            <div class="container md:container mx-auto md:flex md:justify-between md:items-center lg:items-start">
+                <div class="flex flex-col md:w-[50%] md:py-4 md:pr-6">
+                    <h1
+                        class="text-4xl text-center leading-9 md:text-5xl md:leading-10 lg:text-7xl text-[#121116] font-sans lg:leading-[70-px] lg:text-left font-semibold pb-4">
+                        We Help You To Grow
+                        Your Business</h1>
+                    <p
+                        class="text-sm text-center leading-6 font-sans text-[#605d6c] md:text-base md:leading-7 ld:leading-8 ld:text-lg lg:text-left font-normal pb-5">
+                        Power your business to new heights
+                        with our award-winning digital marketing services and technology platform.</p>
+                    <button
+                        class="text-sm leading-6 mt-2 px-6 py-3 bg-[#7557ff] text-[#ffffff] font-sans font-semibold md:text-base md:left-7 md:px-7 md:py-4 lg:leading-8 lg:text-lg lg:px-9 lg:py-5 lg:w-[40%] rounded-md">Get
+                        Started</button>
+                </div>
+                <div class="py-5 md:w-[50%] md:py-4">
+                    <img class="object-cover w-full h-full md:w-auto md:h-auto" src="./Images/Intro.png" alt="Startup">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bg-[#ffffff]">
+        <!-- Services -->
+        <div class="container mx-auto px-4 py-10 md:py-14 lg:py-20 items-center">
+            <h2
+                class="text-3xl leading-8 md:leading-10 md:text-4xl lg:text-6xl text-[#121116] font-sans font-semibold lg:leading-[70-px] text-center">
+                Our Services</h2>
+            <p
+                class="font-sans text-xs leading-5 md:text-sm md:leading-6 text-[#605d6c] lg:leading-7 lg:text-base font-normal text-center py-4">
+                We cannot wait for governments to
+                do it all. Globalization operates on Internet time</p>
+            <div class="w-[80%] m-auto md:w-full md:flex md:justify-between md:py-8 md:gap-3 lg:py-12 lg:gap-5">
+                <div class="rounded-xl shadow-md p-8 md:p-6 lg:p-8 mt-5 md:mt-0">
+                    <img class="w-[80%] md:w-full m-auto" src="./Images/Finance.png" alt="Grow Your Traffic">
+                    <h3
+                        class="text-xl leading-6 md:text-xl md:leading-7 lg:text-2xl text-[#121116] font-sans font-semibold lg:leading-8 text-center py-4">
+                        Grow Your
+                        Traffic</h3>
+                    <p
+                        class="text-sm leading-5 font-sans text-[#605d6c] md:text-sm md:leading-6 lg:text-base lg:leading-7 font-normal text-center">
+                        This I choose to do. If there
+                        is a price, this I choose to pay. If it is my death, then I choose to die.</p>
+                </div>
+                <div class="rounded-xl shadow-md p-8 md:p-6 lg:p-8 mt-5 md:mt-0">
+                    <img class="w-[80%] md:w-full m-auto" src="./Images/Group 5082.png" alt="Grow Your Traffic">
+                    <h3
+                        class="text-xl leading-6 md:text-xl md:leading-7 lg:text-2xl text-[#121116] font-sans font-semibold lg:leading-8 text-center py-4">
+                        Get Quality
+                        Leads</h3>
+                    <p
+                        class="text-sm leading-5 font-sans text-[#605d6c] md:text-sm md:leading-6 lg:text-base lg:leading-7 font-normal text-center">
+                        This I choose to do. If there
+                        is a price, this I choose to pay. If it is my death, then I choose to die.</p>
+                </div>
+                <div class="rounded-xl shadow-md p-8 md:p-6 lg:p-8 mt-5 md:mt-0">
+                    <img class="w-[80%] md:w-full m-auto" src="./Images/SalesMan.png" alt="Grow Your Traffic">
+                    <h3
+                        class="text-xl leading-6 md:text-xl md:leading-7 lg:text-2xl text-[#121116] font-sans font-semibold lg:leading-8 text-center py-4">
+                        Drive More
+                        Sales</h3>
+                    <p
+                        class="text-sm leading-5 font-sans text-[#605d6c] md:text-sm md:leading-6 lg:text-base lg:leading-7 font-normal text-center">
+                        This I choose to do. If there
+                        is a price, this I choose to pay. If it is my death, then I choose to die.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Take care of your business -->
+        <div class="container mx-auto px-4 py-10 md:py-14 lg:py-20 md:flex md:justify-between md:gap-8 ld:gap-10">
+            <div class="md:w-[50%] md:flex md:items-center">
+                <img class="object-cover w-full h-full md:w-auto md:h-auto" src="./Images/Group 5089.png"
+                    alt="Take care of your business">
+            </div>
+            <div class="md:w-[50%] md:flex md:flex-col md:justify-center">
+                <h2
+                    class="text-4xl leading-8 py-5 md:text-5xl md:leading-10 lg:text-6xl text-[#121116] font-sans font-semibold lg:leading-[70-px] text-center md:text-left">
+                    Take care of
+                    your business</h2>
+                <p
+                    class="text-sm leading-5 font-sans text-[#605d6c] md:text-base md:leading-6 lg:leading-7 font-normal lg:text-lg py-4 text-center md:text-left">
+                    Select your project
+                    from here by clicking on projects. Its help us what you need from us.Make your better version of
+                    your web,app or video.</p>
+                <div class="m-auto md:left-0">
+                    <div class="flex items-center py-2 gap-5">
+                        <img class="object-cover w-[10%] md:w-auto md:h-auto" src="./Images/vang.png" alt="1">
+                        <span
+                            class="text-sm leading-5 font-sans text-[#121116] md:text-base md:leading-6 lg:leading-7 font-semibold lg:text-lg">Power
+                            your business to new
+                            heights with our award-winning</span>
+                    </div>
+                    <div class="flex items-center py-2 gap-5">
+                        <img class="object-cover w-[10%] md:w-auto md:h-auto" src="./Images/cam.png" alt="2">
+                        <span
+                            class="text-sm leading-5 font-sans text-[#121116] md:text-base md:leading-6 lg:leading-7 font-semibold lg:text-lg">Our
+                            award-winning digital
+                            marketing services and technology platform.</span>
+                    </div>
+                    <div class="flex items-center py-2 gap-5">
+                        <img class="object-cover w-[10%] md:w-auto md:h-auto" src="./Images/xanh.png" alt="3">
+                        <span
+                            class="text-sm leading-5 font-sans text-[#121116] md:text-base md:leading-6 lg:leading-7 font-semibold lg:text-lg">Business
+                            to new heights with
+                            our award-winning digital marketing.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Save more to grow faster -->
+        <div class="container py-10 px-4 mx-auto md:flex md:justify-between md:py-14 lg:py-20 md:gap-8 lg:gap-10">
+            <div class="lg:pr-10 md:w-[50%] flex md:justify-center flex-col">
+                <h2
+                    class="text-4xl leading-8 py-5 md:text-5xl md:leading-10 lg:text-6xl text-[#121116] font-sans font-semibold lg:leading-[70-px] text-center md:text-left">
+                    Save more to grow faster
+                </h2>
+                <p
+                    class="text-sm leading-5 font-sans text-[#605d6c] md:text-base md:leading-6 lg:leading-7 font-normal lg:text-lg py-4 text-center md:text-left">
+                    Select your project from here by
+                    clicking on projects. Its help us what you need from us.Make your better version of your web,app or
+                    video.</p>
+                <button
+                    class="leading-6 text-sm px-6 py-3 bg-[#7557ff] text-[#ffffff] font-sans font-semibold md:leading-7 md:text-base md:px-9 md:py-4 lg:leading-8 lg:text-lg lg:px-9 lg:py-5 rounded-md lg:w-[50%]">Get
+                    Started</button>
+            </div>
+            <div class="mx-auto md:mx-0 py-4 md:py-0 md:w-[50%] md:right-0 md:flex md:items-center">
+                <img class="object-cover w-full h-full md:w-auto md:h-auto" src="./Images/Group 5090.png"
+                    alt="Save more to grow faster">
+            </div>
+        </div>
+        <!-- What they say -->
+        <div class="container mx-auto px-4 py-10 md:py-14 lg:py-20">
+            <div class="lg:flex lg:justify-between lg:gap-8">
+                <div class="pb-4 text-center lg:hidden">
+                    <h2 class="text-2xl text-[#121116] font-sans font-semibold leading-7 md:text-3xl md:leading-8">What
+                        they say</h2>
+                    <div class="flex gap-1 justify-center">
+                        <p class="text-[#7557FF] font-semibold">__</p>
+                        <p class="text-[#121116] font-semibold">__</p>
+                        <p class="text-[#121116] font-semibold">__</p>
+                    </div>
+                </div>
+                <div class="mt-5 w-[80%] mx-auto lg:mt-0 lg:w-full lg:mx-0 rounded-xl shadow-md p-8">
+                    <div class="flex justify-between pb-4">
+                        <div class="flex gap-4">
+                            <img src="./Images/Oval Copy 6.png" alt="Avatar" />
+                            <div class="flex flex-col">
+                                <p
+                                    class="text-base leading-6 lg:text-xl font-sans font-semibold lg:leading-8 text-[#121116]">
+                                    Joe Root</p>
+                                <span class="text-sm leading-5 font-sans font-normal lg:leading-6 text-[#605d6c]">UI/UX
+                                    Designer</span>
+                            </div>
+                        </div>
+                        <img class="w-6 h-6" src="./Images/Group 5092.png" alt="Status">
+                    </div>
+                    <p class="text-sm leading-6 font-sans text-[#605d6c] lg:text-base lg:leading-7 font-normal">BB is a
+                        much needed blessing and
+                        exceeded our expectations in every way. They are honest, straightforward, they take care of ALL
+                        your needs quickly, they are reliable.</p>
+                </div>
+                <div class="mt-5 w-[80%] mx-auto lg:mt-0 lg:w-full lg:mx-0 rounded-xl shadow-md p-8">
+                    <div class="flex justify-between pb-4">
+                        <div class="flex gap-4">
+                            <img src="./Images/Oval Copy 6.png" alt="Avatar" />
+                            <div class="flex flex-col">
+                                <p
+                                    class="text-base leading-6 lg:text-xl font-sans font-semibold lg:leading-8 text-[#121116]">
+                                    Joe Root</p>
+                                <span class="text-sm leading-5 font-sans font-normal lg:leading-6 text-[#605d6c]">UI/UX
+                                    Designer</span>
+                            </div>
+                        </div>
+                        <div class="object-cover">
+                            <img class="w-6 h-6" src="./Images/Group 5092 2.png" alt="Status">
+                        </div>
+                    </div>
+                    <p class="text-sm leading-6 font-sans text-[#605d6c] lg:text-base lg:leading-7 font-normal">BB is a
+                        much needed blessing and
+                        exceeded our expectations in every way. They are honest, straightforward, they take care of ALL
+                        your needs quickly, they are reliable.</p>
+                </div>
+                <div class="hidden md:hidden lg:block">
+                    <h2 class="text-4xl text-[#121116] font-sans font-semibold leading-[50-px]">What they say</h2>
+                    <div class="flex gap-1">
+                        <p class="text-[#7557FF] font-semibold">__</p>
+                        <p class="text-[#121116] font-semibold">__</p>
+                        <p class="text-[#121116] font-semibold">__</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe -->
+        <div class="container mx-auto px-4 bg-[#7557ff] md:flex md:gap-5 md:px-10 py-10 rounded-2xl">
+            <div class="flex flex-col justify-center">
+                <h2
+                    class="text-2xl leading-8 text-center md:text-3xl md:leading-10 md:text-left lg:text-4xl text-[#ffffff] font-sans font-semibold lg:leading-[50-px]">
+                    Subscribe for free early
+                    marketing access</h2>
+                <div class="flex justify-between pt-5 md:pt-8">
+                    <input
+                        class="text-sm leading-5 px-3 bg-[#7E63FF] text-[#ffffff] md:w-[60%] md:px-4 md:text-base md:leading-6 lg:px-5 font-normal lg:text-lg lg:leading-7 rounded-md"
+                        type="email" placeholder="Enter your email">
+                    <button
+                        class="leading-6 text-sm px-6 py-3 bg-[#ffffff] text-[#7557ff] font-sans font-semibold md:text-base md:leading-7 md:px-7 md:py-4 lg:leading-8 lg:text-lg lg:px-9 lg:py-5 rounded-md md:w-[35%]">Subscribe</button>
+                </div>
+            </div>
+            <div class="hidden md:object-cover md:flex md:items-center">
+                <img class="" src="./Images/SendingEmail.png" alt="Sending Email">
+            </div>
+        </div>
+        <!-- Get In Touch -->
+        <div class="container mx-auto py-10 md:mb-10 lg:mb-0 md:flex md:justify-between md:py-14 lg:py-20">
+            <div>
+                <h2
+                    class="text-2xl leading-8 text-center md:text-3xl md:leading-10 md:text-left lg:text-4xl text-[#121116] font-sans font-semibold lg:leading-[50-px]">
+                    Get In Touch With Us</h2>
+                <p
+                    class="leading-5 text-sm text-center md:text-left font-sans text-[#605d6c] md:text-base md:leading-6 lg:leading-7 font-normal lg:text-lg py-4">
+                    Do you have any questions?</p>
+            </div>
+            <div
+                class="bg-[#ffffff] w-[80%] mx-auto md:right-[5%] md:w-[45%] lg:mx-0 lg:w-[20%] rounded-xl shadow-lg p-8 md:absolute lg:right-[30%]">
+                <p
+                    class="leading-5 text-sm font-sans text-[#605d6c] md:text-base md:leading-6 lg:leading-7 font-normal lg:text-lg py-4 border-b border-[#D7D7D7]">
+                    Name
+                </p>
+                <p
+                    class="leading-5 text-sm font-sans text-[#605d6c] md:text-base md:leading-6 lg:leading-7 font-normal lg:text-lg py-4 border-b border-[#D7D7D7]">
+                    Email
+                </p>
+                <p
+                    class="leading-5 text-sm font-sans text-[#605d6c] md:text-base md:leading-6 lg:leading-7 font-normal lg:text-lg py-4 border-b border-[#D7D7D7]">
+                    Message
+                </p>
+                <div class="py-5">
+                    <button
+                        class="leading-5 text-sm bg-[#7557ff] text-[#ffffff] font-sans font-semibold md:text-base md:leading-6 lg:leading-7 lg:text-lg px-5 py-2 rounded-lg">Send</button>
+                </div>
+            </div>
+        </div>
+</body>
+<footer>
+    <div class="bg-[#fffaef] p-4 md:pt-[150px] lg:pt-[200px]">
+        <div class="container mx-auto flex justify-between border-b-2 border-[#121116]">
+            <div class="object-cover">
+                <img class="py-5" src="./Images/BB.png" alt="Logo">
+            </div>
+            <nav class="flex gap-3 md:gap-5">
+                <a href="#"
+                    class="text-sm leading-6 text-[#7557FF] md:text-base md:leading-7 font-sans lg:text-lg font-normal lg:leading-8 hover:text-[#605D6C] py-5 border-b-2 border-[#7557FF]">Home</a>
+                <a href="#"
+                    class="text-sm leading-6 text-[#605D6C] md:text-base md:leading-7 font-sans lg:text-lg font-normal lg:leading-8 hover:text-[#605D6C] py-5">About</a>
+                <a href="#"
+                    class="text-sm leading-6 text-[#605D6C] md:text-base md:leading-7 font-sans lg:text-lg font-normal lg:leading-8 hover:text-[#605D6C] py-5">Contact</a>
+                <a href="#"
+                    class="text-sm leading-6 text-[#605D6C] md:text-base md:leading-7 font-sans lg:text-lg font-normal lg:leading-8 hover:text-[#605D6C] py-5">Pricing</a>
+            </nav>
+        </div>
+        <div class="container mx-auto flex justify-between py-5">
+            <p
+                class="text-xs leading-5 font-sans text-[#605d6c] md:text-sm md:leading-6 lg:leading-7 font-normal lg:text-base pt-4">
+                @ All right reserved 2022 webdesign.gdn</p>
+            <div class="md:flex md:justify-between md:gap-3 pt-4">
+                <p
+                    class="text-right md:text-left pb-1 text-xs leading-5 font-sans text-[#605d6c] md:text-sm md:leading-6 lg:leading-7 font-normal lg:text-base">
+                    FOLLOW US</p>
+                <div>
+                    <span class="p-1 md:p-2 rounded bg-[#7557FF] text-[#ffffff]"><a class="social-icon" href="#!"><i
+                                class="fa-brands fa-facebook-f"></i></a></span>
+                    <span class="p-1 md:p-2 rounded bg-[#121116] text-[#ffffff]"><a class="social-icon" href="#!"><i
+                                class="fa-brands fa-linkedin-in"></i></a></span>
+                    <span class="p-1 md:p-2 rounded bg-[#121116] text-[#ffffff]"><a class="social-icon" href="#!"><i
+                                class="fa-brands fa-twitter"></i></i></a></span>
+                    <span class="p-1 md:p-2 rounded bg-[#121116] text-[#ffffff]"><a class="social-icon" href="#!"><i
+                                class="fa-brands fa-instagram"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
